@@ -1,53 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_PROMETHEUS",
-      "label": "Prometheus",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "10.3.1"
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -73,7 +24,9 @@
   "description": "This is a modern 'Nodes View' dashboard for your Kubernetes cluster(s). Made for kube-prometheus-stack and take advantage of the latest Grafana features. GitHub repository: https://github.com/dotdc/grafana-dashboards-kubernetes",
   "editable": true,
   "fiscalYearStartMonth": 0,
+  "gnetId": 15759,
   "graphTooltip": 1,
+  "id": 15,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -150,7 +103,7 @@
         "sizing": "auto",
         "text": {}
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -224,7 +177,7 @@
         "sizing": "auto",
         "text": {}
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -288,7 +241,7 @@
         "textMode": "value",
         "wideLayout": true
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -428,7 +381,7 @@
         "showHeader": true,
         "sortBy": []
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -577,7 +530,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -642,7 +595,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -706,7 +659,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -771,7 +724,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -844,7 +797,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "10.3.1",
+      "pluginVersion": "10.3.3",
       "targets": [
         {
           "datasource": {
@@ -3797,7 +3750,11 @@
   "templating": {
     "list": [
       {
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "Prometheus",
+          "value": "PBFA97CFB590B2093"
+        },
         "hide": 0,
         "includeAll": false,
         "multi": false,
@@ -3811,7 +3768,12 @@
         "type": "datasource"
       },
       {
-        "current": {},
+        "current": {
+          "isNone": true,
+          "selected": false,
+          "text": "None",
+          "value": ""
+        },
         "datasource": {
           "type": "prometheus",
           "uid": "${datasource}"
@@ -3881,7 +3843,11 @@
         "type": "custom"
       },
       {
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "aks-linux101-42292446-vmss000000",
+          "value": "aks-linux101-42292446-vmss000000"
+        },
         "datasource": {
           "type": "prometheus",
           "uid": "${datasource}"
@@ -3903,7 +3869,11 @@
         "type": "query"
       },
       {
-        "current": {},
+        "current": {
+          "selected": false,
+          "text": "10.240.0.33:9100",
+          "value": "10.240.0.33:9100"
+        },
         "datasource": {
           "type": "prometheus",
           "uid": "${datasource}"
@@ -3934,7 +3904,6 @@
   "timezone": "",
   "title": "Kubernetes / Views / Nodes",
   "uid": "k8s_views_nodes",
-  "version": 29,
-  "weekStart": "",
-  "gnetId": 15759
+  "version": 1,
+  "weekStart": ""
 }
